@@ -6,8 +6,8 @@
 
     @section('header-content')
 
-        <div class="w-100 bg-primary text-white px-5" style="height:20px;">
-            <div class="container d-flex justify-content-end">
+        <div class="w-100 bg-primary text-white px-5" style="height:30px;">
+            <div class="container d-flex justify-content-end pt-1">
                 <p class="me-5">DC POWER VISA</p>
                 <p>ADDITIONAL DC SITES</p>
             </div>
@@ -60,9 +60,17 @@
                 </div>
                 <div class="row">
                     @foreach ($comics as $singleItem)
-                    <div class="col-2 text-white">
-                        {{ $singleItem['title'] }}
-                    </div>
+                        <div class="col-2 text-white mb-4">
+                            <div class="serie-thumb">
+                                
+                                <img src="{{$singleItem['thumb']}}" alt="{{$singleItem['title']}}">
+                            </div>
+                            <?php 
+                                $title = $singleItem['title'];
+                                $title = strtoupper($title);
+                            ?>
+                            <h6 class="mt-2">{{$title}}</h6>
+                        </div>
                     @endforeach
                 </div>
 
@@ -85,7 +93,7 @@
             </div>
         </section>
     
-        <style>
+        <style lang="scss">
             .area-title {
                 position:relative;
                 bottom:30px;
@@ -99,6 +107,18 @@
                 display:block;
                 margin:0 auto;
             }
+            
+            .serie-thumb {
+                width:210px;
+                height:210px;
+                &> img {
+                    width:100%;
+                    height:100%;
+                    object-fit:cover;
+                    object-position:top;
+                }
+            }
+            
         </style>
 
     @endsection
