@@ -5,7 +5,7 @@
 
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Comics - @yield('website-title')</title>
+        <title>Comics ~ @yield('website-title')</title>
         @vite('resources/js/app.js')
         @yield('head-imports')
 
