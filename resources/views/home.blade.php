@@ -13,8 +13,8 @@
             </div>
         </div>
 
-        <div class="nav-bar w-100 pt-3">
-            <div class="container d-flex justify-content-center align-items-center">
+        <div class="nav-bar w-100 py-3">
+            <div class="container d-flex justify-content-between align-items-center">
                 <img src="/images/dc-logo.png" alt="Logo">
                 <ul class="d-flex">
                     <li><a href="">Characters</a></li>
@@ -29,7 +29,7 @@
                 <input type="search" name="search" id="search" placeholder="Search">
             </div>
         </div>
-        <div class="jumbotron w-100 border"></div>
+        <div class="jumbotron w-100"></div>
 
         <style lang="scss">
             .container {
@@ -47,11 +47,44 @@
                 background-size:cover;
             }
         </style>
-
     @endsection
+
 
     @section('main-content')
 
-    @endsection
+        <div class="w-100" style="background-color:#1C1C1C">
+            <div class="container border">
+            
+                <div class="area-title bg-primary px-4 py-2">
+                    <h5 class="text-white mt-1"><strong>CURRENT SERIES</strong></h5>
+                </div>
+                <div class="row">
+                    @foreach ($comics as $singleItem)
+                    <div class="col-2 text-white">
+                        {{ $singleItem['title'] }}
+                    </div>
+                    @endforeach
+                </div>
 
-@endsection
+                <div class="btn btn-primary px-5 mt-5 mb-3"><strong>LOAD MORE</strong></div>
+                
+            </div>
+        </div>
+    
+        <style>
+            .area-title {
+                position:relative;
+                bottom:30px;
+                max-width:fit-content;
+            }
+
+            .btn.btn-primary {
+                border-radius:0px; 
+                font-size:0.8rem; 
+                width:fit-content;
+                display:block;
+                margin:0 auto;
+            }
+        </style>
+
+    @endsection

@@ -19,5 +19,9 @@
         <main>
             @yield('main-content')
         </main>
+
+        <footer>
+            @yield('footer-content')
+        </footer>
     </body>
 </html>
