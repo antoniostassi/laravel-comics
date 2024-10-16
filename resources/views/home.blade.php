@@ -53,7 +53,7 @@
     @section('main-content')
 
         <div class="w-100" style="background-color:#1C1C1C">
-            <div class="container border">
+            <div class="container pb-3">
             
                 <div class="area-title bg-primary px-4 py-2">
                     <h5 class="text-white mt-1"><strong>CURRENT SERIES</strong></h5>
@@ -66,7 +66,7 @@
                     @endforeach
                 </div>
 
-                <div class="btn btn-primary px-5 mt-5 mb-3"><strong>LOAD MORE</strong></div>
+                <div class="btn btn-primary px-5 mt-5"><strong>LOAD MORE</strong></div>
                 
             </div>
         </div>
