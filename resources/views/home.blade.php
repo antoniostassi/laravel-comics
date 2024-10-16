@@ -16,7 +16,7 @@
         <div class="nav-bar w-100 py-3">
             <div class="container d-flex justify-content-between align-items-center">
                 <img src="/images/dc-logo.png" alt="Logo">
-                <ul class="d-flex">
+                <ul class="d-flex gap-4">
                     <li><a href="">Characters</a></li>
                     <li><a href="">Characters</a></li>
                     <li><a href="">Characters</a></li>
@@ -74,7 +74,7 @@
                     @endforeach
                 </div>
 
-                <div class="btn btn-primary px-5 mt-5"><strong>LOAD MORE</strong></div>
+                <div class="btn btn-primary px-5"><strong>LOAD MORE</strong></div>
                 
             </div>
         </div>
