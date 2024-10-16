@@ -1,17 +1,15 @@
+@extends('layouts.app')
 
-<!DOCTYPE html>
-<html lang="en">
-    <head>
+@section('website-title', 'Home')
 
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Comics</title>
-        @vite('resources/js/app.js');
+@section('main-content')
 
-    </head>
-    <body>
+    @section('header-content')
         
-        
+    @endsection
 
-    </body>
-</html>
+    @section('main-content')
+
+    @endsection
+
+@endsection
