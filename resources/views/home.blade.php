@@ -15,6 +15,6 @@
         @include('home.servicesList')
     @endsection
 
-    @section('footer-conter')
+    @section('footer-content')
         @include('partials.footer')
     @endsection
